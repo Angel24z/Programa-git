@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda - MULTISORE</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/tienda.css">
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header class="header">
+    <div class="logo">
+      <h1>MULTISTORE</h1>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="tienda.html" class="active">Inicio</a></li>
+        <li><a href="carrito.html">Carrito 🛒 <span id="cartCount">(0)</span></a></li>
+        <li><a href="historial.html">Historial 📜</a></li>
+        <li><a href="index.html">Cerrar sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="tienda-container">
+    <h2>🛍️ Bienvenido a la Tienda</h2>
+    <p>Explora nuestros productos y agrega al carrito lo que más te guste.</p>
+
+    <!-- 🔎 Filtros -->
+    <div class="filters">
+      <input type="text" id="searchInput" placeholder="Buscar productos...">
+      <select id="categoryFilter">
+        <option value="all">Todas las categorías</option>
+        <option value="ropa">Ropa</option>
+        <option value="calzado">Calzado</option>
+        <option value="accesorios">Accesorios</option>
+      </select>
+    </div>
+
+    <div class="productos-grid" id="productosList">
+      <!-- Los productos se cargarán dinámicamente desde tienda.js -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 MULTISORE - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="js/tienda.js"></script>
+</body>
+</html>

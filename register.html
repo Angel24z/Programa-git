@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - MULTISTORE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header class="header">
+        <div class="logo">
+            <h1>MULTISTORE</h1>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html" class="active">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Formulario Registro -->
+    <section class="form-container">
+        <h2>Crear Cuenta</h2>
+        <form id="registerForm">
+            <div class="form-group">
+                <label for="name">Nombre completo:</label>
+                <input type="text" id="name" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="regEmail" placeholder="ejemplo@correo.com" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="regPassword" placeholder="******" required>
+            </div>
+            <div class="form-group">
+                <label for="role">Tipo de usuario:</label>
+                <select id="role" required>
+                    <option value="">Seleccione...</option>
+                    <option value="cliente">Cliente</option>
+                    <option value="vendedor">Vendedor</option>
+                    <option value="admin">Administrador</option>
+                </select>
+            </div>
+            <button type="submit" class="btn-primary">Registrarse</button>
+            <p class="form-text">¿Ya tienes cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+        </form>
+        <p id="registerMessage"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 MULTISORE - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+.historial-container {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.historial-container h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.tabla-historial {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+
+.tabla-historial th,
+.tabla-historial td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.tabla-historial th {
+    background: #161a1e;
+    color: #fff;
+}
+
+.tabla-historial tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+#historialMessage {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555; 
+}

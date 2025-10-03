@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usuarios - MULTISORE</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/usuarios.css">
+</head>
+<body>
+
+  <!-- Encabezado general -->
+  <header class="header">
+    <div class="logo">
+      <h1>MULTISORE</h1>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="dashboard.html">Panel</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="inventario.html">Inventario</a></li>
+        <li><a href="ventas.html">Ventas</a></li>
+        <li><a href="reportes.html">Reportes</a></li>
+        <li><a href="usuarios.html" class="active">Usuarios</a></li>
+        <li><a href="index.html">Cerrar sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="usuarios-container">
+    <h2>Gestión de Usuarios</h2>
+    <p>Administra perfiles de clientes, vendedores y administradores.</p>
+
+    <!-- Formulario -->
+    <section class="form-section">
+      <h3>Registrar Nuevo Usuario</h3>
+      <form id="usuarioForm">
+        <input type="text" id="nombre" placeholder="Nombre completo" required>
+        <input type="email" id="correo" placeholder="Correo electrónico" required>
+        <select id="rol" required>
+          <option value="">Seleccionar rol</option>
+          <option value="Cliente">Cliente</option>
+          <option value="Vendedor">Vendedor</option>
+          <option value="Administrador">Administrador</option>
+        </select>
+        <button type="submit">Agregar Usuario</button>
+      </form>
+    </section>
+
+    <!-- Tabla -->
+    <section class="table-section">
+      <h3>Lista de Usuarios</h3>
+      <input type="text" id="buscarUsuario" placeholder="Buscar usuario...">
+
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Rol</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="tablaUsuarios">
+          <!-- Filas dinámicas -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 MULTISORE - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="js/usuarios.js"></script>
+</body>
+</html>

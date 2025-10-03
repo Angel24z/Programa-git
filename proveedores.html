@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Proveedores - MULTISORE</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header class="header">
+    <div class="logo">
+      <h1>MULTISORE</h1>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="dashboard.html">Panel</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="inventario.html">Inventario</a></li>
+        <li><a href="ventas.html">Ventas</a></li>
+        <li><a href="reportes.html">Reportes</a></li>
+        <li><a href="usuarios.html">Usuarios</a></li>
+        <li><a href="proveedores.html" class="active">Proveedores</a></li>
+        <li><a href="index.html">Cerrar sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="main-container">
+    <h2>Gestión de Proveedores</h2>
+    <p>Registra y administra los proveedores de la plataforma.</p>
+
+    <!-- Formulario -->
+    <section class="form-section">
+      <h3>Registrar Proveedor</h3>
+      <form id="proveedorForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="empresa">Empresa:</label>
+        <input type="text" id="empresa" name="empresa" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <button type="submit">Agregar Proveedor</button>
+      </form>
+    </section>
+
+    <!-- Tabla -->
+    <section class="table-section">
+      <h3>Lista de Proveedores</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Empresa</th>
+            <th>Teléfono</th>
+            <th>Correo</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="proveedorTable">
+          <!-- Aquí se insertan proveedores con JS -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 MULTISORE - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="js/proveedores.js"></script>
+</body>
+</html>

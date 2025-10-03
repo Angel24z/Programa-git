@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos - MULTISORE</title>
+  <link rel="stylesheet" href="css/style.css"> <!-- Mantiene encabezado uniforme -->
+  <link rel="stylesheet" href="css/productos.css"> <!-- Estilos específicos de productos -->
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header class="header">
+    <div class="logo">
+      <h1>MULTISORE</h1>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="dashboard.html">Panel</a></li>
+        <li><a href="productos.html" class="active">Productos</a></li>
+        <li><a href="inventario.html">Inventario</a></li>
+        <li><a href="ventas.html">Ventas</a></li>
+        <li><a href="reportes.html">Reportes</a></li>
+        <li><a href="usuarios.html">Usuarios</a></li>
+        <li><a href="index.html">Cerrar sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido -->
+  <main class="productos-container">
+    <h2>Gestión de Productos</h2>
+    <p>Aquí puedes registrar, editar o eliminar productos de la tienda.</p>
+
+    <!-- Formulario -->
+    <section class="form-section">
+      <h3>Agregar Producto</h3>
+      <form id="productoForm">
+        <input type="text" id="nombre" placeholder="Nombre del producto" required>
+        <input type="number" id="precio" placeholder="Precio" required>
+        <input type="number" id="stock" placeholder="Stock" required>
+        <button type="submit">Agregar</button>
+      </form>
+    </section>
+
+    <!-- Barra de búsqueda -->
+    <section class="busqueda-section">
+      <input type="text" id="busqueda" placeholder="Buscar producto...">
+    </section>
+
+    <!-- Tabla -->
+    <section class="tabla-section">
+      <h3>Lista de Productos</h3>
+      <table id="tablaProductos">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Filas dinámicas -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 MULTISORE - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="js/productos.js"></script>
+</body>
+</html>

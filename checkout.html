@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - MULTISORE</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header class="header">
+    <div class="logo">
+      <h1>MULTISORE</h1>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="tienda.html">Tienda</a></li>
+        <li><a href="carrito.html">Carrito 🛒</a></li>
+        <li><a href="index.html">Cerrar sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido -->
+  <main class="checkout-container">
+    <h2>💳 Finalizar compra</h2>
+
+    <form id="checkoutForm" class="checkout-form">
+      <!-- Datos personales -->
+      <fieldset>
+        <legend>Datos de envío</legend>
+        <div class="form-group">
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="direccion">Dirección:</label>
+          <input type="text" id="direccion" required>
+        </div>
+        <div class="form-group">
+          <label for="ciudad">Ciudad:</label>
+          <input type="text" id="ciudad" required>
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" required>
+        </div>
+      </fieldset>
+
+      <!-- Métodos de pago -->
+      <fieldset>
+        <legend>Método de pago</legend>
+        <div class="form-group">
+          <input type="radio" id="pagoTarjeta" name="pago" value="tarjeta" required>
+          <label for="pagoTarjeta">Tarjeta de crédito/débito</label>
+        </div>
+        <div class="form-group">
+          <input type="radio" id="pagoTransferencia" name="pago" value="transferencia">
+          <label for="pagoTransferencia">Transferencia bancaria</label>
+        </div>
+        <div class="form-group">
+          <input type="radio" id="pagoContraEntrega" name="pago" value="contraentrega">
+          <label for="pagoContraEntrega">Pago contra entrega</label>
+        </div>
+      </fieldset>
+
+      <!-- Resumen -->
+      <section class="resumen-compra">
+        <h3>Resumen de compra</h3>
+        <ul id="resumenCarrito">
+          <!-- Se llena con JS -->
+        </ul>
+        <p><strong>Total: <span id="totalCheckout">$0</span></strong></p>
+      </section>
+
+      <button type="submit" class="btn-primary">Confirmar compra</button>
+    </form>
+
+    <p id="checkoutMessage"></p>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 MULTISORE - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="js/checkout.js"></script>
+</body>
+</html>

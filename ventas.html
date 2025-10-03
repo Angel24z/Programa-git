@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ventas - MULTISORE</title>
+  <link rel="stylesheet" href="css/style.css"> <!-- Encabezado general -->
+  <link rel="stylesheet" href="css/ventas.css"> <!-- Estilos específicos -->
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header class="header">
+    <div class="logo">
+      <h1>MULTISORE</h1>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="dashboard.html">Panel</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="inventario.html">Inventario</a></li>
+        <li><a href="ventas.html" class="active">Ventas</a></li>
+        <li><a href="reportes.html">Reportes</a></li>
+        <li><a href="usuarios.html">Usuarios</a></li>
+        <li><a href="index.html">Cerrar sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido -->
+  <main class="ventas-container">
+    <h2>Gestión de Ventas</h2>
+    <p>Simulación de carrito de compras y facturación.</p>
+
+    <!-- Agregar productos -->
+    <section class="form-section">
+      <h3>Agregar Producto al Carrito</h3>
+      <form id="ventasForm">
+        <input type="text" id="producto" placeholder="Nombre del producto" required>
+        <input type="number" id="precio" placeholder="Precio" required>
+        <input type="number" id="cantidad" placeholder="Cantidad" required>
+        <button type="submit">Agregar al Carrito</button>
+      </form>
+    </section>
+
+    <!-- Carrito -->
+    <section class="carrito-section">
+      <h3>Carrito de Compras</h3>
+      <table id="tablaCarrito">
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Total</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Filas dinámicas -->
+        </tbody>
+      </table>
+      <div class="factura">
+        <h4>Total a Pagar: $<span id="totalFactura">0</span></h4>
+        <button id="finalizarVenta">Finalizar Venta</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 MULTISORE - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="js/ventas.js"></script>
+</body>
+</html>

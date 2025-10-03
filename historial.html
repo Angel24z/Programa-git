@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historial de compras - MULTISORE</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/historial.css">
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header class="header">
+    <div class="logo">
+      <h1>MULTISORE</h1>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="tienda.html">Tienda</a></li>
+        <li><a href="carrito.html">Carrito 🛒</a></li>
+        <li><a href="historial.html" class="active">Historial 📜</a></li>
+        <li><a href="index.html">Cerrar sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido -->
+  <main class="historial-container">
+    <h2>📜 Historial de compras</h2>
+    <p>Aquí puedes consultar tus pedidos anteriores.</p>
+
+    <table class="tabla-historial">
+      <thead>
+        <tr>
+          <th># Orden</th>
+          <th>Fecha</th>
+          <th>Productos</th>
+          <th>Total</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody id="historialBody">
+        <!-- Se llena dinámicamente con historial.js -->
+      </tbody>
+    </table>
+
+    <p id="historialMessage"></p>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 MULTISORE - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="js/historial.js"></script>
+</body>
+</html>
